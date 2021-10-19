@@ -1,4 +1,6 @@
 .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background: var(--color-background-card);
   color: var(--color-text);
   margin: 2rem;

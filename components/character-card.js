@@ -28,17 +28,25 @@ const cardAppearance = createElement("h3", { className: styles.cardLocation }, [
   "Pilot",
 ]);
 
+const characterCardPicture = createElement("img", {
+  src: "./components/Bepisian.jpeg",
+  alt: "",
+});
+
 export default function createCharacterCard() {
   const characterCardElement = createElement(
     "article",
     { className: styles.card },
     [
-      cardHeader,
-      cardSubtitle,
-      cardSectionTitleLocation,
-      cardLocation,
-      cardSectionTitleAppearence,
-      cardAppearance,
+      characterCardPicture,
+      createElement("div", {}, [
+        cardHeader,
+        cardSubtitle,
+        cardSectionTitleLocation,
+        cardLocation,
+        cardSectionTitleAppearence,
+        cardAppearance,
+      ]),
     ]
   );
 
