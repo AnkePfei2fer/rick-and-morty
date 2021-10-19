@@ -7,13 +7,11 @@ import "./style.css";
 function renderApp() {
   const appElement = document.body.querySelector("#app");
 
-  // const headerElement = createElement("header", { className: "header" }, [
-  //   createElement("h1", {}, "Rick and Morty"),
-  // ]);
   const headerElement = createHeaderElement();
   const mainElement = createMainElement();
   const footerElement = createFooterElement();
 
   appElement.append(headerElement, mainElement, footerElement);
 }
+
 renderApp();
