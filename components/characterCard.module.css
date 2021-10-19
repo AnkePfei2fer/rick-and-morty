@@ -1,0 +1,15 @@
+.card {
+  background: var(--color-background-card);
+  color: var(--color-text);
+  margin: 2rem;
+  border-radius: 0.75rem;
+}
+
+.cardHeader:hover,
+.cardLocation:hover {
+  color: var(--color-text-highlight);
+}
+
+.cardSectionTitle {
+  color: var(--color-text-footer);
+}
