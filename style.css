@@ -12,27 +12,37 @@
 
   /* COLORS */
   --color-background-main: #101726;
+  --color-background-header: white;
   --color-background-cards: #2e3d59;
   --color-text-header: #101726;
   --color-text: white;
+  --color-text-footer: #6d80a6;
   --color-text-highlight: #49f2c2;
 
   /* BORDERS */
   --border-radius: 15px;
 }
 
+.header {
+  background-color: var(--color-background-header);
+  color: var(--color-text-header);
+  font-weight: 700;
+  padding: 2rem;
+  text-align: center;
+}
+
 body {
   font-family: var(--font-family);
   background-color: var(--color-background-main);
+  color: var(--color-text);
+  text-align: center;
+  margin: 0;
 }
 
-/* VERIFY THESE */
-#app {
-  background-color: var(--color-background-main);
+.footer {
+  position: absolute;
+  bottom: 10px;
   font-family: var(--font-family);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: var(--color-text);
-  margin-top: 60px;
+  background-color: var(--color-background-main);
+  color: var(--color-text-footer);
 }
