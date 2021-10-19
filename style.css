@@ -1,8 +1,48 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  /* FONT */
+  --font-family: "Ubuntu", sans-serif;
+
+  /* COLORS */
+  --color-background-main: #101726;
+  --color-background-header: #e8faf5;
+  --color-background-cards: #2e3d59;
+  --color-text-header: #101726;
+  --color-text: #e8faf5;
+  --color-text-footer: #6d80a6;
+  --color-text-highlight: #49f2c2;
+
+  /* BORDERS */
+  --border-radius: 15px;
+}
+
+.header {
+  background-color: var(--color-background-header);
+  color: var(--color-text-header);
+  font-weight: 700;
+  padding: 2rem;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-background-main);
+  color: var(--color-text);
+  text-align: center;
+  margin: 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  font-family: var(--font-family);
+  background-color: var(--color-background-main);
+  color: var(--color-text-footer);
 }

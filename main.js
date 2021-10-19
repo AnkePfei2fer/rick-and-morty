@@ -1,6 +1,17 @@
+// import { createElement } from "./lib/elements";
+import { createHeaderElement } from "./lib/headerElement";
+import { createMainElement } from "./lib/mainElement";
+import { createFooterElement } from "./lib/footerElement";
 import "./style.css";
 
-document.querySelector("#app").innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`;
+function renderApp() {
+  const appElement = document.body.querySelector("#app");
+
+  const headerElement = createHeaderElement();
+  const mainElement = createMainElement();
+  const footerElement = createFooterElement();
+
+  appElement.append(headerElement, mainElement, footerElement);
+}
+
+renderApp();
