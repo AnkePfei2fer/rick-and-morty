@@ -1,4 +1,3 @@
-// import { createElement } from "./lib/elements";
 import { createHeaderElement } from "./lib/headerElement";
 import { createMainElement } from "./lib/mainElement";
 import { createFooterElement } from "./lib/footerElement";

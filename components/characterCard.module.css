@@ -1,0 +1,28 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--color-background-card);
+  color: var(--color-text);
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+.cardPicture {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.cardText {
+  display: grid;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.cardHeader:hover,
+.cardLocation:hover,
+.cardAppearance:hover {
+  color: var(--color-text-highlight);
+}
+
+.cardSectionTitle {
+  color: var(--color-text-footer);
+}
