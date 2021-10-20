@@ -18,7 +18,7 @@ export default function createCharacterCard({
         className: styles.cardPicture,
         alt: "",
       }),
-      createElement("h2", { className: styles.cardHeader }, [name]),
+      createElement("h3", { className: styles.cardHeader }, [name]),
       createElement("span", { className: styles.cardSubtitle }, [
         status + " - " + species,
       ]),

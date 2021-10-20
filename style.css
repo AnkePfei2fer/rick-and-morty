@@ -27,7 +27,6 @@
   background-color: var(--color-background-header);
   color: var(--color-text-header);
   font-weight: 700;
-  font-size: 2rem;
   padding: 2rem;
   text-align: center;
 }
