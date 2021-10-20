@@ -8,13 +8,8 @@
 }
 
 .cardPicture {
+  grid-row: 1/7;
   border-radius: 0.5rem 0 0 0.5rem;
-}
-
-.cardText {
-  display: grid;
-  padding: 0.5rem;
-  text-align: left;
 }
 
 .cardHeader:hover,
