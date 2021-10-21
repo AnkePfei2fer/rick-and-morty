@@ -16,13 +16,13 @@ export default function createCharacterCard({
   const firstEpisodeElement = createElement(
     "span",
     { className: styles.cardAppearance },
-    [firstEpisode]
+    firstEpisode
   );
 
   const lastLocationElement = createElement(
     "span",
     { className: styles.cardLocation },
-    [locationUrl]
+    locationUrl
   );
 
   const characterCardElement = createElement(
