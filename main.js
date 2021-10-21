@@ -10,9 +10,11 @@ import "./style.css";
 // Declare function for rendering the app
 async function renderApp() {
   const appElement = document.body.querySelector("#app");
-
   const headerElement = createHeaderElement();
   const searchElement = createSearchComponent(handleSubmit);
+
+  // Declare asynchroneous function to handle the search query,
+  //    create and prepend new character cards and remove default cards
   async function handleSubmit(searchQuery) {
     const response = await fetch(
       `https://rickandmortyapi.com/api/character/?name=${searchQuery}`
@@ -24,6 +26,8 @@ async function renderApp() {
     const characterSearch = searchResults.map((searchResult) =>
       createCharacterCard(searchResult)
     );
+
+    // Completely clear the content of selected element
     document.body.querySelector("main").innerHTML = "";
     document.body.querySelector("main").prepend(...characterSearch);
   }
