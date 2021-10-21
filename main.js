@@ -1,4 +1,5 @@
 import { createHeaderElement } from "./lib/headerElement";
+import createSearchComponent from "./components/searchComponent";
 import { createMainElement } from "./lib/mainElement";
 import { createFooterElement } from "./lib/footerElement";
 import { fetchRandomCharacters } from "./lib/fetchCharacters";
@@ -10,6 +11,7 @@ async function renderApp() {
   const appElement = document.body.querySelector("#app");
 
   const headerElement = createHeaderElement();
+  const searchElement = createSearchComponent();
 
   // Fetch character data from Rick and Morty API (first page)
   // const characters = await fetchCharacters();
@@ -23,7 +25,7 @@ async function renderApp() {
   const mainElement = createMainElement(characters);
   const footerElement = createFooterElement();
 
-  appElement.append(headerElement, mainElement, footerElement);
+  appElement.append(headerElement, searchElement, mainElement, footerElement);
 }
 
 renderApp();
