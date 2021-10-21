@@ -11,10 +11,17 @@
   font-weight: 700;
   border-radius: 0.3rem;
   border: none;
+  background-color: var(--color-background-card);
+  color: var(--color-text);
 }
 
 .inputField {
   font-family: var(--font-family);
   border-radius: 0.3rem;
   border: none;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  color: var(--color-text-footer);
 }
