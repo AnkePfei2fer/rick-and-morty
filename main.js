@@ -3,7 +3,7 @@ import createSearchComponent from "./components/searchComponent";
 import { createMainElement } from "./lib/mainElement";
 import createCharacterCard from "./components/character-card";
 import { createFooterElement } from "./lib/footerElement";
-import { fetchRandomCharacters } from "./lib/fetchCharacters";
+import { fetchMultipleCharacters } from "./lib/fetchCharacters";
 import fetchCharacters from "./lib/fetchCharacters";
 import "./style.css";
 
@@ -32,7 +32,7 @@ async function renderApp() {
   // const characters = await fetchCharacters();
 
   // OR Fetch 20 random characters
-  const characters = await fetchRandomCharacters([
+  const characters = await fetchMultipleCharacters([
     71, 287, 119, 342, 528, 599, 393, 204, 517, 27, 244, 7, 109, 541, 643, 658,
     294, 40, 154, 117,
   ]);
