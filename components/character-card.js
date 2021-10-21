@@ -10,7 +10,6 @@ export default function createCharacterCard({
   episode,
 }) {
   const firstEpisode = episode[0];
-  const lastLocation = location.name;
   const locationUrl = location.url;
 
   const firstEpisodeElement = createElement(
