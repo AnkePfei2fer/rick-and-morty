@@ -1,6 +1,7 @@
 import { createElement } from "../lib/elements";
 import styles from "./characterCard.module.css";
 
+// Declare function for character cards
 export default function createCharacterCard({
   image,
   name,
