@@ -1,19 +1,20 @@
 import { createElement } from "../lib/elements";
+import styles from "./searchComponent.module.css";
 
 export default function createSearchComponent() {
   const inputField = createElement("input", {
     type: "text",
     placeholder: "Search characters",
-    className: "inputField",
+    className: styles.inputField,
   });
 
   const submitButton = createElement(
     "button",
-    { type: "submit", className: "submitButton" },
+    { type: "submit", className: styles.submitButton },
     ["Go!"]
   );
 
-  const searchElement = createElement("form", { className: "search" }, [
+  const searchElement = createElement("form", { className: styles.search }, [
     inputField,
     submitButton,
   ]);
