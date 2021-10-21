@@ -35,10 +35,6 @@
   background-size: contain;
 }
 
-/* ::-webkit-input-placeholder {
-  text-align: center;
-} */
-
 body {
   font-family: var(--font-family);
   background-color: var(--color-background-main);

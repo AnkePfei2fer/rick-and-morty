@@ -20,14 +20,11 @@ async function renderApp() {
     const body = await response.json();
     const searchResults = body.results;
     console.log(searchResults);
-    // return searchResults;
 
     const characterSearch = searchResults.map((searchResult) =>
       createCharacterCard(searchResult)
     );
-    // document.body.removeChild(characterCards);
     document.body.querySelector("main").innerHTML = "";
-    // document.body.querySelector("main").prepend(searchElement);
     document.body.querySelector("main").prepend(...characterSearch);
   }
 
